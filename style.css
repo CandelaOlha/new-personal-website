@@ -323,6 +323,9 @@ footer {
     margin-bottom: 60px;
     width: 100%;
   }
+  .about-title {
+    line-height: 1.2;
+  }
   .about-image-container {
     width: 100%;
   }
