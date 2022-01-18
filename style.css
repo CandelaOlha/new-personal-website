@@ -61,6 +61,7 @@ body {
 .page-container {
   max-width: 1196px;
   padding: 0 40px;
+  width: 100%;
 }
 
 /* Header styles */
@@ -116,6 +117,23 @@ header {
   margin-right: 10px;
 }
 
+/* Mobile menu */
+
+.hamburger-menu {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+.hamburger-menu i {
+  color: #1f1d1c;
+  font-size: 24px;
+}
+
+.mobile-menu-container {
+  display: none;
+}
+
 /* Hero section styles */
 
 .introduction {
@@ -132,12 +150,13 @@ header {
 }
 
 .hero-section-elements-container {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
 .scroll-down-icon {
+  margin-right: 40px;
   width: 50px;
 }
 
@@ -156,12 +175,15 @@ header {
 }
 
 .about-section-text-container {
-  max-width: 548px;
+  padding-right: 20px;
+  width: 50%;
 }
 
 .about-title {
+  font-family: "Circular Bold";
   font-size: 36px;
   line-height: 1.4;
+  margin-bottom: 40px;
 }
 
 .about-description {
@@ -174,6 +196,8 @@ header {
 
 .about-image-container {
   display: flex;
+  justify-content: flex-end;
+  width: 50%;
 }
 
 .about-image-container img {
@@ -278,7 +302,7 @@ footer {
 }
 
 .scroll-to-top {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   text-decoration: none;
 }
@@ -287,4 +311,76 @@ footer {
   margin-left: 10px;
   transform: rotate(180deg);
   width: 30px;
+}
+
+/* Responsive styles */
+
+/* Navbar styles */
+
+@media screen and (max-width: 900px) {
+  .about-section-text-container {
+    padding-right: 0;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  .about-image-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .section-title {
+    font-size: 72px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .menu,
+  .mode-switcher {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .phrase {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .section-title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .contact-details-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .social-media-list {
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .project-number {
+    display: none;
+  }
+  .hero-section-elements-container img {
+    left: 40px;
+  }
+  .email-container {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .section-title {
+    font-size: 48px;
+  }
 }
