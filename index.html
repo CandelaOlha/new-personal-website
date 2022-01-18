@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="page-container">
-        <header>
+        <header id="top">
             <!-- Start of navbar -->
             <nav class="navbar">
                 <h1 class="my-name">Candela Olha</h1>
@@ -38,14 +38,16 @@
                     <h2 class="main-text section-title">I’m a UX designer & frontend developer from Buenos Aires</h2>
                 </div>
                 <div class="hero-section-elements-container">
-                    <img src="icons/arrow.svg" class="scroll-down-icon" aria-label="Scroll down">
+                    <a href="#about" class="scroll-down-icon">
+                        <img src="icons/arrow.svg" class="scroll-down-icon" aria-label="Scroll down">
+                    </a>
                     <img src="images/sample-image-1.jpg" alt="">
                 </div>
             </section>
             <!-- End of hero section -->
         </header>
         <!-- Start of about section -->
-        <section class="about-section section">
+        <section class="about-section section" id="about">
             <div class="about-section-text-container">
                 <h2 class="section-title about-title">I’m passionate about bringing beautiful and user-centric designs to life.</h2>
                 <div class="about-description">
@@ -61,7 +63,7 @@
         </section>
         <!-- End of about section -->
         <!-- Start of projects section -->
-        <section class="projects-section section">
+        <section class="projects-section section" id="projects">
             <h2 class="section-title">Selected projects</h2>
             <div class="projects-container">
                 <div class="projects-list">
@@ -111,7 +113,7 @@
         </section>
         <!-- End of projects section -->
         <!-- Start of contact section -->
-        <section class="contact-section section">
+        <section class="contact-section section" id="contact">
             <h2 class="contact-section-title section-title">Looking for a frontend developer?</h2>
             <div class="contact-details-container">
                 <div class="email-container">
