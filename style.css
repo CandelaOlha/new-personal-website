@@ -223,3 +223,64 @@ header {
   transform: rotate(270deg);
   width: 30px;
 }
+
+/* Contact section styles */
+
+.contact-section-title {
+  max-width: 790px;
+}
+
+.contact-details-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-container {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 40px 0 120px;
+}
+
+.email-container a {
+  text-decoration: none;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+.social-media-item {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.social-media-link {
+  border-bottom: 2px solid #1f1d1c;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+/* Footer styles */
+
+footer {
+  align-items: center;
+  border-top: 1px solid #1f1d1c26;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.scroll-to-top {
+  align-items: flex-end;
+  display: flex;
+  text-decoration: none;
+}
+
+.scroll-to-top img {
+  margin-left: 10px;
+  transform: rotate(180deg);
+  width: 30px;
+}
