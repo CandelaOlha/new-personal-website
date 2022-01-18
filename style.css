@@ -30,6 +30,7 @@
   font-family: "Circular Bold";
   font-size: 82px;
   line-height: 1;
+  margin-bottom: 40px;
 }
 
 .description {
@@ -157,7 +158,6 @@ header {
 .about-title {
   font-size: 36px;
   line-height: 1.4;
-  margin-bottom: 40px;
 }
 
 .about-description {
@@ -174,4 +174,52 @@ header {
 
 .about-image-container img {
   max-width: 100%;
+}
+
+/* Projects section styles */
+
+.projects-container {
+  margin: 0 auto;
+  max-width: 680px;
+}
+
+.projects-list {
+  margin-bottom: 40px;
+}
+
+.project {
+  border-bottom: 1px solid #1f1d1c26;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.project-text-container {
+  align-items: center;
+  display: flex;
+}
+
+.project-number {
+  margin-right: 40px;
+}
+
+.project-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-icon-container {
+  align-items: center;
+  border-radius: 100%;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+}
+
+.project img {
+  transform: rotate(270deg);
+  width: 30px;
 }
