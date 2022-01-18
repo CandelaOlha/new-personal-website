@@ -1,9 +1,132 @@
+@font-face {
+  font-family: "Circular Bold";
+  src: url(fonts/CircularStd-Bold.otf);
+}
+
+@font-face {
+  font-family: "Circular Book";
+  src: url(fonts/CircularStd-Book.otf);
+}
+
+/* Reset */
+
 * {
   box-sizing: border-box;
+  color: #1f1d1c;
   margin: 0;
   padding: 0;
 }
 
+/* Fonts styles */
+
+.section-title {
+  font-family: "Circular Bold";
+  font-size: 82px;
+  line-height: 1;
+}
+
+.description {
+  font-family: "Circular Book";
+  line-height: 1.8;
+}
+
+/* Body styles */
+
 body {
+  align-items: center;
   background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  max-width: 1196px;
+  padding: 0 40px;
+}
+
+/* Header styles */
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+/* Navbar styles */
+
+.navbar {
+  border-bottom: 1px solid #1f1d1c26;
+  display: flex;
+  font-family: "Circular Book";
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.my-name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  list-style-type: none;
+  margin: 0 20px;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  transition: 0.4s;
+}
+
+.menu-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mode-switcher {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.mode-switcher i {
+  margin-right: 10px;
+}
+
+/* Hero section styles */
+
+.hero-section {
+  padding: 80px 0;
+}
+
+.introduction {
+  max-width: 845px;
+}
+
+.secondary-text {
+  margin-bottom: 10px;
+}
+
+.secondary-text span {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.hero-section-elements-container {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll-down-icon {
+  width: 50px;
+}
+
+.hero-section-elements-container img {
+  position: relative;
+  left: 100px;
 }
