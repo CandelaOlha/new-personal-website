@@ -151,7 +151,7 @@ header {
 }
 
 .about-section-text-container {
-  width: 50%;
+  max-width: 548px;
 }
 
 .about-title {
