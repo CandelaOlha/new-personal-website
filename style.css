@@ -47,6 +47,11 @@ html {
   border-bottom: 2px solid #1f1d1c;
   padding-bottom: 5px;
   text-decoration: none;
+  transition: 0.2s;
+}
+
+.cta:hover {
+  border-bottom: 2px solid transparent;
 }
 
 /* Body styles */
@@ -112,6 +117,11 @@ header {
   align-items: center;
   cursor: pointer;
   display: flex;
+}
+
+.mode-switcher:hover {
+  transform: translateY(-5px);
+  transition: 0.4s;
 }
 
 .mode-switcher i {
@@ -325,7 +335,12 @@ header {
 
 .project img {
   transform: rotate(270deg);
+  transition: 0.4s;
   width: 30px;
+}
+
+.project:hover img {
+  transform: rotate(200deg);
 }
 
 /* Contact section styles */
@@ -350,6 +365,19 @@ header {
   text-decoration: none;
 }
 
+.email-container a:after {
+  background-color: #1f1d1c;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  transition: 0.4s;
+}
+
+.email-container a:hover:after {
+  width: 100%;
+}
+
 .social-media-list {
   display: flex;
   flex-direction: column;
@@ -365,6 +393,11 @@ header {
   border-bottom: 2px solid #1f1d1c;
   padding-bottom: 5px;
   text-decoration: none;
+  transition: 0.4s;
+}
+
+.social-media-link:hover {
+  border-bottom: 2px solid transparent;
 }
 
 /* Footer styles */
@@ -387,6 +420,11 @@ footer {
   align-items: center;
   display: flex;
   text-decoration: none;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+  transition: 0.4s;
 }
 
 .scroll-to-top img {
@@ -417,6 +455,15 @@ body.dark-mode .project {
 body.dark-mode .cta,
 body.dark-mode .social-media-link {
   border-bottom: 2px solid #f9f2ed;
+}
+
+body.dark-mode .cta:hover,
+body.dark-mode .social-media-link:hover {
+  border-bottom: 2px solid transparent;
+}
+
+body.dark-mode .email-container a:after {
+  background-color: #f9f2ed;
 }
 
 body.dark-mode .line {
