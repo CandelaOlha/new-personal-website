@@ -169,7 +169,7 @@ header {
   display: flex;
   flex-direction: column;
   height: 0;
-  justify-content: space-evenly;
+  justify-content: center;
   max-height: -webkit-fill-available;
   overflow: hidden;
   padding: 0 20px;
