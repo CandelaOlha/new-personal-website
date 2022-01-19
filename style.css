@@ -533,6 +533,9 @@ body.dark-mode footer {
 }
 
 @media screen and (max-width: 530px) {
+  header {
+    height: auto;
+  }
   .project-number {
     display: none;
   }
@@ -547,8 +550,5 @@ body.dark-mode footer {
 @media screen and (max-width: 460px) {
   .section-title {
     font-size: 48px;
-  }
-  .about-section {
-    padding-top: 180px;
   }
 }
