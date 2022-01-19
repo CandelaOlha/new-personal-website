@@ -122,14 +122,25 @@ header {
 /* Mobile menu */
 
 .hamburger-menu {
+  align-items: flex-end;
   background-color: transparent;
   border: none;
   display: none;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.hamburger-menu i {
-  color: #1f1d1c;
-  font-size: 24px;
+.line {
+  background-color: #1f1d1c;
+  height: 2px;
+}
+
+.one {
+  width: 40px;
+}
+
+.two {
+  width: 25px;
 }
 
 .mobile-menu-container {
@@ -345,7 +356,7 @@ footer {
     display: none;
   }
   .hamburger-menu {
-    display: block;
+    display: flex;
   }
   footer {
     align-items: flex-start;
