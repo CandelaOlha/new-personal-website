@@ -60,7 +60,6 @@ body {
 
 .page-container {
   max-width: 1196px;
-  overflow: hidden;
   padding: 0 40px;
   width: 100%;
 }
@@ -421,6 +420,12 @@ body.dark-mode footer {
 /* Responsive styles */
 
 /* Navbar styles */
+
+@media screen and (max-width: 1200px) {
+  .page-container {
+    overflow: hidden;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .about-section-text-container {
