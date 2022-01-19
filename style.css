@@ -119,12 +119,17 @@ header {
   margin-right: 10px;
 }
 
+.mode-switcher i.is-hidden {
+  display: none;
+}
+
 /* Mobile menu */
 
 .hamburger-menu {
   align-items: flex-end;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   display: none;
   flex-direction: column;
   justify-content: space-around;
@@ -383,6 +388,25 @@ footer {
   margin-left: 10px;
   transform: rotate(180deg);
   width: 30px;
+}
+
+/* Dark mode */
+
+body.dark-mode {
+  background-color: #1f1d1c;
+}
+
+body.dark-mode * {
+  color: #f9f2ed;
+}
+
+body.dark-mode .cta,
+body.dark-mode .social-media-link {
+  border-bottom: 2px solid #f9f2ed;
+}
+
+body.dark-mode .line {
+  background-color: #f9f2ed;
 }
 
 /* Responsive styles */
