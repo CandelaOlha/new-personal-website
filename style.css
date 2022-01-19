@@ -176,7 +176,7 @@ header {
   position: fixed;
   right: 0;
   top: 0;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   width: 100%;
 }
 
