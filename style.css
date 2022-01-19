@@ -377,6 +377,12 @@ footer {
   padding: 40px 0;
 }
 
+.mobile-elements-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
 .scroll-to-top {
   align-items: center;
   display: flex;
@@ -387,6 +393,10 @@ footer {
   margin-left: 10px;
   transform: rotate(180deg);
   width: 30px;
+}
+
+.mobile-elements-container .mode-switcher {
+  display: none;
 }
 
 /* Dark mode */
@@ -461,6 +471,12 @@ body.dark-mode footer {
   }
   .phrase {
     margin-bottom: 30px;
+  }
+  .mobile-elements-container {
+    width: 100%;
+  }
+  .mobile-elements-container .mode-switcher {
+    display: block;
   }
 }
 

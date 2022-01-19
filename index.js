@@ -3,12 +3,12 @@ const lineOne = document.querySelector(".line-one");
 const lineTwo = document.querySelector(".line-two");
 const mobileMenuContainer = document.querySelector(".mobile-menu-container");
 const mobileMenuLinks = document.querySelectorAll(".mobile-menu-link");
-const modeSwitcher = document.querySelector(".mode-switcher");
-const modeSwitcherText = document.querySelector(".mode-switcher-text");
+const modeSwitchers = document.querySelectorAll(".mode-switcher");
+const modeSwitcherTexts = document.querySelectorAll(".mode-switcher-text");
 const body = document.querySelector("body");
 const arrows = document.querySelectorAll(".arrow");
-const moonIcon = document.querySelector(".fa-moon");
-const sunIcon = document.querySelector(".fa-sun");
+const moonIcons = document.querySelectorAll(".fa-moon");
+const sunIcons = document.querySelectorAll(".fa-sun");
 
 // Mobile menu
 
@@ -37,32 +37,40 @@ for (let i = 0; i < mobileMenuLinks.length; i++) {
 
 // Dark mode
 
-modeSwitcher.onclick = () => {
-
-    if (modeSwitcherText.textContent === "Dark mode") {
-        modeSwitcherText.textContent = "Light mode";
-      }
-      else {
-        modeSwitcherText.textContent = "Dark mode";
-      }
-
-    moonIcon.classList.toggle("is-hidden");
-    sunIcon.classList.toggle("is-hidden");
-
-    body.classList.toggle("dark-mode");
-
-    if (body.classList.contains("dark-mode")) {
-        for (let i = 0; i < arrows.length; i++) {
-            arrows[i].src = "icons/arrow-dark-mode.svg";
+for (let i = 0; i < modeSwitchers.length; i++) {
+    modeSwitchers[i].onclick = () => {
+        for (let j = 0; j < modeSwitcherTexts.length; j++) {
+            if (modeSwitcherTexts[j].textContent === "Dark mode") {
+                modeSwitcherTexts[j].textContent = "Light mode";
+              }
+              else {
+                modeSwitcherTexts[j].textContent = "Dark mode";
+              }
         }
-      }
-      else {
-        for (let i = 0; i < arrows.length; i++) {
-            arrows[i].src = "icons/arrow.svg";
+    
+        for (let j = 0; j < moonIcons.length; j++) {
+            moonIcons[j].classList.toggle("is-hidden"); 
         }
-      }
 
-    saveModeInLocalStorage();
+        for (let j = 0; j < sunIcons.length; j++) {
+            sunIcons[j].classList.toggle("is-hidden"); 
+        }
+    
+        body.classList.toggle("dark-mode");
+    
+        if (body.classList.contains("dark-mode")) {
+            for (let i = 0; i < arrows.length; i++) {
+                arrows[i].src = "icons/arrow-dark-mode.svg";
+            }
+          }
+          else {
+            for (let i = 0; i < arrows.length; i++) {
+                arrows[i].src = "icons/arrow.svg";
+            }
+          }
+    
+        saveModeInLocalStorage();
+    }
 }
 
 const saveModeInLocalStorage = () => {
@@ -88,10 +96,17 @@ const saveModeInLocalStorage = () => {
       const JSModePreference = JSON.parse(JSONModePreference);
     
       if (JSModePreference.mode === "dark") {
+          for (let i = 0; i < modeSwitcherTexts.length; i++) {
+            modeSwitcherTexts[i].textContent = "Light mode";
+          }
 
-          modeSwitcherText.textContent = "Light mode";
-          moonIcon.classList.add("is-hidden");
-          sunIcon.classList.remove("is-hidden");
+          for (let i = 0; i < moonIcons.length; i++) {
+            moonIcons[i].classList.add("is-hidden");
+          }
+
+          for (let i = 0; i < sunIcons.length; i++) {
+            sunIcons[i].classList.remove("is-hidden");
+          }
 
           body.classList.add("dark-mode");
 
