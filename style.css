@@ -119,11 +119,6 @@ header {
   display: flex;
 }
 
-.mode-switcher:hover {
-  transform: translateY(-5px);
-  transition: 0.4s;
-}
-
 .mode-switcher i {
   margin-right: 10px;
 }
@@ -242,11 +237,10 @@ header {
 }
 
 .scroll-down-icon {
-  margin-right: 40px;
   width: 50px;
 }
 
-.hero-section-elements-container img {
+.hero-section-image {
   position: relative;
   left: 100px;
 }
@@ -420,11 +414,6 @@ footer {
   align-items: center;
   display: flex;
   text-decoration: none;
-}
-
-.scroll-to-top:hover {
-  transform: translateY(-5px);
-  transition: 0.4s;
 }
 
 .scroll-to-top img {
