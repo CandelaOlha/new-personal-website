@@ -128,6 +128,12 @@ header {
   display: none;
   flex-direction: column;
   justify-content: space-around;
+  z-index: 2;
+}
+
+.hamburger-menu-closed {
+  align-items: center;
+  justify-content: stretch;
 }
 
 .line {
@@ -135,16 +141,68 @@ header {
   height: 2px;
 }
 
-.one {
+.line-one {
+  transition: 0.5s;
   width: 40px;
 }
 
-.two {
+.line-one-closed {
+  background-color: #f9f2ed;
+  transform: rotate(45deg);
+}
+
+.line-two {
+  transition: 0.5s;
   width: 25px;
 }
 
+.line-two-closed {
+  background-color: #f9f2ed;
+  position: relative;
+  top: -2px;
+  transform: rotate(-45deg);
+  width: 40px;
+}
+
 .mobile-menu-container {
-  display: none;
+  background-color: #1f1d1c;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  justify-content: space-evenly;
+  overflow: hidden;
+  padding: 0 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: 0.5s;
+  width: 100%;
+}
+
+/* Class to show mobile menu with JS */
+
+.show-mobile-menu {
+  height: 100vh;
+  padding: 20px;
+  z-index: 1;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-item {
+  list-style-type: none;
+  margin: 20px;
+}
+
+.mobile-menu-link {
+  border-bottom: 2px solid #f9f2ed;
+  color: #f9f2ed;
+  font-size: 36px;
+  padding: 10px 0;
+  text-decoration: none;
 }
 
 /* Hero section styles */
