@@ -400,6 +400,11 @@ body.dark-mode * {
   color: #f9f2ed;
 }
 
+body.dark-mode .navbar,
+body.dark-mode .project {
+  border-bottom: 1px solid #f9f2ed26;
+}
+
 body.dark-mode .cta,
 body.dark-mode .social-media-link {
   border-bottom: 2px solid #f9f2ed;
@@ -407,6 +412,10 @@ body.dark-mode .social-media-link {
 
 body.dark-mode .line {
   background-color: #f9f2ed;
+}
+
+body.dark-mode footer {
+  border-top: 1px solid #f9f2ed26;
 }
 
 /* Responsive styles */
