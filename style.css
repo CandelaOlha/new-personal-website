@@ -76,7 +76,6 @@ header {
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
-  max-height: -webkit-fill-available;
 }
 
 /* Navbar styles */
