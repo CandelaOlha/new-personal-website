@@ -178,7 +178,6 @@ header {
   flex-direction: column;
   height: 0;
   justify-content: center;
-  max-height: 100vh;
   overflow: hidden;
   padding: 0 20px;
   position: fixed;
@@ -191,7 +190,7 @@ header {
 /* Class to show mobile menu with JS */
 
 .show-mobile-menu {
-  height: 100vh;
+  height: 100%;
   padding: 20px;
   z-index: 1;
 }
