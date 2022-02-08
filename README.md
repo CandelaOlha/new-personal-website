@@ -2,7 +2,7 @@
 
 ## About this project
 
-This is a website I made with the aim of showing my work as a frontend developer.
+This is a website I made with the aim of introducing myself and showing my work as a designer and frontend developer.
 
 I used Figma to create a minimal design and then turned it into reality with HTML, CSS and a bit of Vanilla Javascript.
 
