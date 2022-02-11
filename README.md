@@ -18,7 +18,7 @@ I used Figma to create a minimal design and then turned it into reality with HTM
 - [Adobe Color](https://color.adobe.com/es/create) for color picking
 - [Font awesome](https://fontawesome.com/) for icons
 
-In this case, I wanted to make an impact by using a simple but remarkable typeface. So I downloaded the "Circular St" font instead of using the ones from [Google Fonts](https://fonts.google.com/), which I usually choose for my projects.
+In this case, I wanted to make an impact by using a simple but remarkable typeface. So I downloaded a free version of the "Circular St" font from the Internet instead of using the ones from [Google Fonts](https://fonts.google.com/), which I usually choose for my projects.
 
 ### Visit my website! 👇
 
